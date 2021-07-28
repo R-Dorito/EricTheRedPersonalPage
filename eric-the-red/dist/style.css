@@ -1,0 +1,116 @@
+#main{
+  font-family: 'Hind',sans-serif;
+  width: 1200px;
+  margin: auto;
+  padding: 10px;
+}
+
+@media(max-width: 500px){
+  #main{
+    max-width: 500px;
+    margin: auto;
+    display: grid;
+    grid-template-areas:
+      "Title"
+      "ImageCard"
+      "TextArea";
+  }
+  #tribute-info{
+    font-size: 16px;
+  }
+}
+@media(min-width: 500px){
+    #main{
+    max-width: 700px;
+    margin: auto;
+    display: grid;
+    grid-template-areas:
+      "Title "
+      "ImageCard"
+      "TextArea";
+  }
+}
+@media(min-width: 1100px){
+  #main{
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-areas:
+      "Title Title Title"
+      "ImageCard TextArea TextArea"
+  }
+  #tribute-info{
+    font-size: 20px;
+  }
+  #img-div{
+    min-width: 500px;
+    min-height: 500px;
+  }
+}
+
+#title{
+  font-family: 'Fredoka One', sans-serif; 
+  font-size: 40px;
+  color: #ff4d94;
+  grid-area: Title;
+}
+
+#img-div{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  grid-area: ImageCard;
+}
+
+#img-holder{
+  background-color: #e6ffff;
+  border-radius: 30px;
+  border: 5px solid #ffb3ff;
+}
+#image{
+  max-width: 70%;
+  display:flex;
+  justify-content: center;
+  margin: auto;
+}
+#image:hover{
+  transform:scale(1.01);
+}
+#img-caption{
+  margin: auto;
+  font-family: arial;
+  display:flex;
+  justify-content: center;
+  padding: 10px 0px;
+}
+#tribute-info{
+  padding: 20px;
+  grid-template-area: TextArea;
+}
+
+#tribute-link{
+  text-decoration-line: none;
+}
+#tribute-link:hover{
+  color: #ff0066;
+}
+
+#title-name{
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Secular One', sans-serif;
+  color: #00b3b3;
+}
+#footer{
+  position: fixed;
+  display:flex;
+  margin:auto;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+}
+
+#footer p{
+  color: grey;
+  font-family: 'Sarabun', sans-serif;
+}
